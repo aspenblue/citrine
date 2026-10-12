@@ -12,12 +12,12 @@ image-version: latest
 
 modules:
 
-  - from-file: 20-system/common/system.yml
-  - from-file: 30-apps/common/apps.yml
-  - from-file: 60-shell/cinnamon/cinnamon-shell.yml
-  - from-file: 60-shell/cinnamon/lightdm.yml
-  - from-file: 70-desktop/common/apps.yml
-  - from-file: 70-desktop/cinnamon/cinnamon-apps.yml
+  - from-file: ../modules/20-system/common/system.yml
+  - from-file: ../modules/30-apps/common/apps.yml
+  - from-file: ../modules/60-shell/cinnamon/cinnamon-shell.yml
+  - from-file: ../modules/60-shell/cinnamon/lightdm.yml
+  - from-file: ../modules/70-desktop/common/apps.yml
+  - from-file: ../modules/70-desktop/cinnamon/cinnamon-apps.yml
 
 
   # -----------------------------------------------

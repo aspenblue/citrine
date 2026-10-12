@@ -54,7 +54,7 @@ jobs:
       # Provide common recipes for BlueBuild
       - name: Add common recipes
         run: |
-          cp -a --update=none tmp/main/recipes/* recipes/
+          cp -a --update=none tmp/main/modules/* modules/
 
       # Provide common files
       - name: Add common files
