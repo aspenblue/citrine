@@ -1,0 +1,70 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Core Cinnamon
+  # -----------------------------------------------
+
+  - type: dnf
+    group-install:
+      with-optional: true
+      packages:
+        - cinnamon-desktop
+
+  # -----------------------------------------------
+  # Desktop packages
+  # -----------------------------------------------
+
+  #- type: dnf
+  #  install:
+  #    install-weak-deps: false
+  #    packages:
+  #      - 
+
+
+  # -----------------------------------------------
+  # Remove unneccessary packages
+  # -----------------------------------------------
+
+  #- type: dnf
+  #  remove:
+  #    packages:
+  #      - gnome-calculator
+  #      - file-roller
+  #      - simple-scan
+  #      - thunderbird
+           
+
+  # -----------------------------------------------
+  # Desktop flatpaks
+  # -----------------------------------------------      
+
+  - type: default-flatpaks
+    configurations:
+      - notify: false
+        scope: system
+        install:
+
+          # Web
+  #        - org.pvermeer.WebAppHub        # Веб-приложения
+          - org.mozilla.firefox           # Браузер
+  #        - com.getmailspring.Mailspring  # Почта
+
+          # Apps
+          - io.github.kolunmi.Bazaar      # Магазин приложений
+
+
+  # -----------------------------------------------
+  # Desktop services
+  # -----------------------------------------------     
+
+  #- type: systemd
+  #  system:
+  #    enabled:
+        # uupd handles bootc, brew, flatpak, and distrobox updates.
+  #      - uupd.timer
+  #    disabled:
+        # Disable rpm-ostree auto path to avoid overlapping update mechanisms.
+  #      - rpm-ostreed-automatic.timer          

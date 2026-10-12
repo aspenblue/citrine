@@ -1,0 +1,28 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Core Cinnamon
+  # -----------------------------------------------
+
+  - type: dnf
+    group-install:
+      with-optional: true
+      packages:
+        - cinnamon-desktop
+
+  # -----------------------------------------------
+  # Cinnamon packages
+  # -----------------------------------------------
+
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        # Essential Mint themes and icons for a polished Cinnamon experience.
+        - mint-themes
+        - mint-y-icons
+        - mint-x-icons
+        - desktop-backgrounds-compat

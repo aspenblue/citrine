@@ -1,0 +1,27 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Greeter packages
+  # -----------------------------------------------
+
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        # Cinnamon display manager and greeter stack.
+        - lightdm
+        - lightdm-gtk
+        - slick-greeter
+
+
+  # -----------------------------------------------
+  # Greeter services
+  # -----------------------------------------------     
+
+  - type: systemd
+    system:
+      enabled:
+        - lightdm.service

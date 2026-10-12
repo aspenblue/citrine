@@ -1,0 +1,26 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+version: 1
+
+name: citrine-classic
+
+description: "Personal Fedora Atomic image based on Universal Blue, with Cinnamon DE."
+
+base-image: ghcr.io/ublue-os/base-main
+image-version: latest
+
+modules:
+
+  - from-file: 20-system/common/system.yml
+  - from-file: 30-apps/common/apps.yml
+  - from-file: 70-desktop/common/apps.yml
+  - from-file: 70-desktop/cinnamon/lightdm.yml
+  - from-file: 70-desktop/cinnamon/cinnamon.yml
+
+
+  # -----------------------------------------------
+  # Sign image
+  # -----------------------------------------------
+
+  - type: signing
