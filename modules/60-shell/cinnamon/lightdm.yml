@@ -25,3 +25,13 @@ modules:
     system:
       enabled:
         - lightdm.service
+
+
+  # -----------------------------------------------
+  # Lightdm configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/lightdm
+        destination: /         
