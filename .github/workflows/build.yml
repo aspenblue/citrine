@@ -1,0 +1,71 @@
+name: Build AspenBlue Citrine
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 3 * * *"
+
+permissions:
+  contents: read
+  packages: write
+
+concurrency:
+  group: aspenblue-citrine-build
+  cancel-in-progress: true
+
+jobs:
+
+  build:
+
+    strategy:
+      matrix:
+        recipe:
+          #- citrine
+          - citrine-classic
+
+    name: Build ${{ matrix.recipe }}
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+
+      # Main repo
+      - name: Checkout Noctalite
+        uses: actions/checkout@v7
+
+      # Common repo
+      - name: Checkout Common
+        uses: actions/checkout@v7
+        with:
+          repository: aspenblue/main
+          ref: main
+          path: tmp/main
+
+      # Provide common recipes for BlueBuild
+      - name: Add common recipes
+        run: |
+          cp -a --update=none tmp/main/recipes/* recipes/
+
+      # Provide common files
+      - name: Add common files
+        run: |
+          cp -a --update=none tmp/main/files/* files/
+
+      - name: Build image
+        uses: blue-build/github-action@v1
+        with:
+          recipe: ${{ matrix.recipe }}.yml
+          skip_checkout: true
+          cosign_private_key: ${{ secrets.SIGNING_SECRET }}
+          registry_token: ${{ github.token }}
+          maximize_build_space: true
