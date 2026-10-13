@@ -12,11 +12,12 @@ modules:
       packages:
         - gnome-calculator
         - gnome-calendar
+        - gnome-terminal
         - file-roller
         - simple-scan
         - thunderbird
         - transmission
-        - xautv
+        - xawtv
         - gnome-system-monitor
         - gnome-disk-utility
         - gnome-software

@@ -24,7 +24,9 @@ modules:
         - mate-calc
         - engrampa
         - lxtask
-           
+        - mate-terminal
+        - webapp-manager                # Веб-приложения
+
 
   # -----------------------------------------------
   # Desktop flatpaks
@@ -36,24 +38,12 @@ modules:
         scope: system
         install:
 
+          # Office
+          - org.onlyoffice.desktopeditors # Офис
+
           # Web
-  #        - org.pvermeer.WebAppHub        # Веб-приложения
           - org.mozilla.firefox           # Браузер
-  #        - com.getmailspring.Mailspring  # Почта
+          - com.getmailspring.Mailspring  # Почта
 
           # Apps
           - io.github.kolunmi.Bazaar      # Магазин приложений
-
-
-  # -----------------------------------------------
-  # Desktop services
-  # -----------------------------------------------     
-
-  #- type: systemd
-  #  system:
-  #    enabled:
-        # uupd handles bootc, brew, flatpak, and distrobox updates.
-  #      - uupd.timer
-  #    disabled:
-        # Disable rpm-ostree auto path to avoid overlapping update mechanisms.
-  #      - rpm-ostreed-automatic.timer          
