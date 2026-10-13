@@ -17,24 +17,13 @@ modules:
   # Desktop packages
   # -----------------------------------------------
 
-  #- type: dnf
-  #  install:
-  #    install-weak-deps: false
-  #    packages:
-  #      - 
-
-
-  # -----------------------------------------------
-  # Remove unneccessary packages
-  # -----------------------------------------------
-
-  #- type: dnf
-  #  remove:
-  #    packages:
-  #      - gnome-calculator
-  #      - file-roller
-  #      - simple-scan
-  #      - thunderbird
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        - mate-calc
+        - engrampa
+        - mate-system-monitor
            
 
   # -----------------------------------------------

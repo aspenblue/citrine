@@ -1,0 +1,27 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Remove unneccessary packages
+  # -----------------------------------------------
+
+  - type: dnf
+    remove:
+      packages:
+        - gnome-calculator
+        - gnome-calendar
+        - file-roller
+        - simple-scan
+        - thunderbird
+        - transmission
+        - xautv
+        - gnome-system-monitor
+        - gnome-disk-utility
+        - gnome-software
+        - gnome-software-fedora-langpacks
+        - gnome-software-rpm-ostree
+        - shotwell
+        - pidgin
+        - hexchat

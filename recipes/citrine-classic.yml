@@ -18,6 +18,8 @@ modules:
   - from-file: ../modules/60-shell/cinnamon/lightdm.yml
   - from-file: ../modules/70-desktop/common/apps.yml
   - from-file: ../modules/70-desktop/cinnamon/cinnamon-apps.yml
+  - from-file: ../modules/80-cleanup/common/apps-clean.yml
+  - from-file: ../modules/80-cleanup/cinnamon/cinnamon-clean.yml
 
 
   # -----------------------------------------------
