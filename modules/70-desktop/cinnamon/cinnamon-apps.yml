@@ -23,7 +23,7 @@ modules:
       packages:
         - mate-calc
         - engrampa
-        - sysmontask
+        - lxtask
            
 
   # -----------------------------------------------
