@@ -34,7 +34,6 @@ modules:
         - mate-calc
         - engrampa
         - lxtask
-        - mate-terminal
         - webapp-manager                # Веб-приложения
 
 

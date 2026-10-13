@@ -12,7 +12,6 @@ modules:
       packages:
         - gnome-calculator
         - gnome-calendar
-        - gnome-terminal
         - file-roller
         - simple-scan
         - thunderbird
