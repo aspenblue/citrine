@@ -31,8 +31,9 @@ modules:
       ID: aspenblue-citrine
       ID_LIKE: fedora
       NAME: "Aspenblue Citrine"
-      PRETTY_NAME: "Aspenblue Citrine - Fedora Atomic"
+      PRETTY_NAME: "Aspenblue Citrine 44 (Univaersal Blue)"
       VERSION: "44"
+      DEFAULT_HOSTNAME: citrine
       VARIANT: "Classic Edition"
       VARIANT_ID: classic
       HOME_URL: "https://github.com/aspenblue/citrine"
