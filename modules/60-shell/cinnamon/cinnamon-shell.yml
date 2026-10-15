@@ -37,4 +37,4 @@ modules:
     install:
       packages:
         - docking
-    install-weak-deps: false        
+      install-weak-deps: false        
