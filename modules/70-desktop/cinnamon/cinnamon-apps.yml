@@ -4,26 +4,6 @@
 modules: 
 
   # -----------------------------------------------
-  # webapp-manager repository
-  # -----------------------------------------------
-
-  - type: dnf
-    repos:
-      copr:
-        - kylegospo/webapp-manager
-
-
-  # -----------------------------------------------
-  # Core Cinnamon
-  # -----------------------------------------------
-
-  - type: dnf
-    group-install:
-      with-optional: true
-      packages:
-        - cinnamon-desktop
-
-  # -----------------------------------------------
   # Desktop packages
   # -----------------------------------------------
 
@@ -34,7 +14,20 @@ modules:
         - mate-calc
         - engrampa
         - lxtask
-        - webapp-manager                # Веб-приложения
+
+
+  # -----------------------------------------------
+  # webapp-manager package
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      copr:
+        - kylegospo/webapp-manager
+    install:
+      install-weak-deps: false
+      packages:
+        - webapp-manager                # Веб-приложения    
 
 
   # -----------------------------------------------
