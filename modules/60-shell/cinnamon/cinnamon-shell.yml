@@ -26,10 +26,27 @@ modules:
   # Cinnamon spices fix
   # -----------------------------------------------
 
-  #- type: files
-  #  files:
-  #    - source: rootfs/cinnamon
-  #      destination: /
   - type: script
     scripts:
       - cinnamon-spices-fix.sh
+
+
+  # -----------------------------------------------
+  # Cinnamon spices install
+  # -----------------------------------------------
+
+  - type: script
+    scripts:
+      - cinnamon-cinnamenu-install.sh    
+
+
+  - type: dnf
+    repos:
+      files:
+        - docking-rpm.repo
+      keys:
+        - https://dl.cloudsmith.io/public/docking/docking-rpm/gpg.key
+    install:
+      packages:
+        - docking
+      install-weak-deps: false

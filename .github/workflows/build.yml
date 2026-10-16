@@ -27,7 +27,7 @@ jobs:
     strategy:
       matrix:
         recipe:
-          #- citrine
+          - citrine
           - citrine-classic
 
     name: Build ${{ matrix.recipe }}
