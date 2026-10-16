@@ -26,7 +26,10 @@ modules:
   # Cinnamon spices fix
   # -----------------------------------------------
 
-  - type: files
-    files:
-      - source: rootfs/cinnamon
-        destination: /
+  #- type: files
+  #  files:
+  #    - source: rootfs/cinnamon
+  #      destination: /
+  - type: script
+    scripts:
+      - cinnamon-spices-fix.sh
