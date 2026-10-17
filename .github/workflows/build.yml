@@ -28,7 +28,9 @@ jobs:
       matrix:
         recipe:
           - citrine
-          - citrine-classic
+          #- citrine-fe
+          #- citrine-plus
+          #- citrine-plus-fe
 
     name: Build ${{ matrix.recipe }}
     runs-on: ubuntu-latest

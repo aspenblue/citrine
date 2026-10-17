@@ -1,0 +1,13 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Cinnamon panel appearence
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/cinnamon-panel-classic
+        destination: / 

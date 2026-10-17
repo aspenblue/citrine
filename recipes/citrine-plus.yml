@@ -3,7 +3,7 @@
 
 version: 1
 
-name: citrine-classic
+name: citrine-plus
 
 description: "Personal Fedora Atomic image based on Universal Blue, with Cinnamon DE."
 
@@ -14,10 +14,10 @@ modules:
 
   - from-file: ../modules/20-system/common/system.yml
   - from-file: ../modules/30-apps/common/apps.yml
-  - from-file: ../modules/60-shell/cinnamon/cinnamon-shell.yml
-  - from-file: ../modules/60-shell/cinnamon/lightdm.yml
-  - from-file: ../modules/70-desktop/common/apps.yml
-  - from-file: ../modules/70-desktop/cinnamon/cinnamon-apps.yml
+  - from-file: ../modules/50-shell/cinnamon/cinnamon-shell.yml
+  - from-file: ../modules/50-shell/cinnamon/cinnamon-plus-shell.yml
+  - from-file: ../modules/50-shell/cinnamon/lightdm.yml
+  - from-file: ../modules/60-desktop/cinnamon/cinnamon-apps.yml
   - from-file: ../modules/80-cleanup/common/apps-clean.yml
   - from-file: ../modules/80-cleanup/cinnamon/cinnamon-clean.yml
 
@@ -34,8 +34,8 @@ modules:
       PRETTY_NAME: "Aspenblue Citrine 44 (Universal Blue)"
       VERSION: "44"
       DEFAULT_HOSTNAME: citrine
-      VARIANT: "Classic Edition"
-      VARIANT_ID: classic
+      VARIANT: "Plus"
+      VARIANT_ID: plus
       HOME_URL: "https://github.com/aspenblue/citrine"
 
 

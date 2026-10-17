@@ -1,0 +1,47 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+version: 1
+
+name: citrine-fe
+
+description: "Personal Fedora Atomic image based on Universal Blue, with Cinnamon DE."
+
+base-image: ghcr.io/ublue-os/base-main
+image-version: 44
+
+modules:
+
+  - from-file: ../modules/20-system/common/system.yml
+  - from-file: ../modules/30-apps/common/apps.yml
+  - from-file: ../modules/50-shell/cinnamon/cinnamon-shell.yml
+  - from-file: ../modules/50-shell/cinnamon/lightdm.yml
+  - from-file: ../modules/60-desktop/common/fe-apps.yml
+  - from-file: ../modules/60-desktop/cinnamon/cinnamon-apps.yml
+  - from-file: ../modules/70-appearence/cinnamon-classic/panel.yml  
+  - from-file: ../modules/80-cleanup/common/apps-clean.yml
+  - from-file: ../modules/80-cleanup/cinnamon/cinnamon-clean.yml
+
+
+  # -----------------------------------------------
+  # OS details
+  # -----------------------------------------------
+
+  - type: os-release
+    properties:
+      ID: aspenblue-citrine
+      ID_LIKE: fedora
+      NAME: "Aspenblue Citrine"
+      PRETTY_NAME: "Aspenblue Citrine 44 (Universal Blue)"
+      VERSION: "44"
+      DEFAULT_HOSTNAME: citrine
+      VARIANT: "FE"
+      VARIANT_ID: fe
+      HOME_URL: "https://github.com/aspenblue/citrine"
+
+
+  # -----------------------------------------------
+  # Sign image
+  # -----------------------------------------------
+
+  - type: signing

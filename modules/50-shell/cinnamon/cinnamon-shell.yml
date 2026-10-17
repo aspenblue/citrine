@@ -37,16 +37,4 @@ modules:
 
   - type: script
     scripts:
-      - cinnamon-cinnamenu-install.sh    
-
-
-  - type: dnf
-    repos:
-      files:
-        - docking-rpm.repo
-      keys:
-        - https://dl.cloudsmith.io/public/docking/docking-rpm/gpg.key
-    install:
-      packages:
-        - docking
-      install-weak-deps: false
+      - cinnamon-cinnamenu-install.sh
