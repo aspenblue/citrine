@@ -28,7 +28,7 @@ jobs:
       matrix:
         recipe:
           - citrine
-          #- citrine-fe
+          - citrine-fe
           #- citrine-plus
           #- citrine-plus-fe
 

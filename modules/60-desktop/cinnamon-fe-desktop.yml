@@ -27,7 +27,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
-        - webapp-manager                # Веб-приложения    
+        - webapp-manager   
 
 
   # -----------------------------------------------
@@ -41,11 +41,7 @@ modules:
         install:
 
           # Office
-          - org.onlyoffice.desktopeditors # Офис
+          - org.onlyoffice.desktopeditors
 
           # Web
-          - org.mozilla.firefox           # Браузер
-          - com.getmailspring.Mailspring  # Почта
-
-          # Apps
-          - io.github.kolunmi.Bazaar      # Магазин приложений
+          - com.getmailspring.Mailspring

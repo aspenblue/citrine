@@ -4,10 +4,9 @@
 modules: 
 
   # -----------------------------------------------
-  # Cinnamon panel appearence
+  # Cinnamon cinnamenu install
   # -----------------------------------------------
 
-  - type: files
-    files:
-      - source: rootfs/cinnamon-panel-classic
-        destination: / 
+  - type: script
+    scripts:
+      - cinnamon-cinnamenu-install.sh

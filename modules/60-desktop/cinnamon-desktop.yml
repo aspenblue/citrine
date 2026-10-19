@@ -1,0 +1,19 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Desktop flatpaks
+  # -----------------------------------------------      
+
+  - type: default-flatpaks
+    configurations:
+      - notify: false
+        scope: system
+        install:
+          # Web
+          - org.mozilla.firefox
+
+          # Apps
+          - io.github.kolunmi.Bazaar

@@ -12,14 +12,12 @@ image-version: 44
 
 modules:
 
-  - from-file: ../modules/20-system/common/system.yml
-  - from-file: ../modules/30-apps/common/apps.yml
-  - from-file: ../modules/50-shell/cinnamon/cinnamon-shell.yml
-  - from-file: ../modules/50-shell/cinnamon/lightdm.yml
-  - from-file: ../modules/60-desktop/cinnamon/cinnamon-apps.yml
-  - from-file: ../modules/70-appearence/cinnamon-classic/panel.yml  
-  - from-file: ../modules/80-cleanup/common/apps-clean.yml
-  - from-file: ../modules/80-cleanup/cinnamon/cinnamon-clean.yml
+  - from-file: ../modules/20-system/common-system.yml
+  - from-file: ../modules/30-apps/common-apps.yml
+  - from-file: ../modules/50-shell/cinnamon-shell.yml
+  - from-file: ../modules/50-shell/lightdm.yml
+  - from-file: ../modules/60-desktop/cinnamon-desktop.yml
+  - from-file: ../modules/80-cleanup/common-cleanup.yml
 
 
   # -----------------------------------------------
