@@ -29,12 +29,3 @@ modules:
   - type: script
     scripts:
       - cinnamon-spices-fix.sh
-
-
-  # -----------------------------------------------
-  # Cinnamon spices install
-  # -----------------------------------------------
-
-  - type: script
-    scripts:
-      - cinnamon-cinnamenu-install.sh

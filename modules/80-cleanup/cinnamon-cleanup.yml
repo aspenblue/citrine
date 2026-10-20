@@ -1,0 +1,20 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Remove unneccessary packages
+  # -----------------------------------------------
+
+  - type: dnf
+    remove:
+      packages:
+        - thunderbird
+        - transmission
+        - pidgin
+        - hexchat
+        - gnome-software
+        - gnome-software-fedora-langpacks
+        - gnome-software-rpm-ostree
+  

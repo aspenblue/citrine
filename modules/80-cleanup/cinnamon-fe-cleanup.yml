@@ -14,15 +14,8 @@ modules:
         - gnome-calendar
         - file-roller
         - simple-scan
-        - thunderbird
-        - transmission
         - xawtv
         - gnome-system-monitor
         - gnome-disk-utility
-        - gnome-software
-        - gnome-software-fedora-langpacks
-        - gnome-software-rpm-ostree
         - shotwell
-        - pidgin
-        - hexchat
   

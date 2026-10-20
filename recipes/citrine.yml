@@ -17,7 +17,9 @@ modules:
   - from-file: ../modules/50-shell/cinnamon-shell.yml
   - from-file: ../modules/50-shell/lightdm.yml
   - from-file: ../modules/60-desktop/cinnamon-desktop.yml
+  - from-file: ../modules/60-desktop/cinnamon-default-desktop.yml
   - from-file: ../modules/80-cleanup/common-cleanup.yml
+  - from-file: ../modules/80-cleanup/cinnamon-cleanup.yml
 
 
   # -----------------------------------------------

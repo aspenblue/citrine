@@ -23,7 +23,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - kylegospo/webapp-manager
+        - aspenblue/xapps
     install:
       install-weak-deps: false
       packages:
