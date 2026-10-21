@@ -7,6 +7,6 @@ modules:
   # Cinnamon cinnamenu install
   # -----------------------------------------------
 
-  #- type: script
-  #  scripts:
-  #    - cinnamon-cinnamenu-install.sh
+  - type: script
+    scripts:
+      - cinnamon-cinnamenu-install.sh
