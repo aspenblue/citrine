@@ -15,11 +15,12 @@ modules:
   - from-file: ../modules/20-system/common-system.yml
   - from-file: ../modules/30-apps/common-apps.yml
   - from-file: ../modules/50-shell/cinnamon-shell.yml
-  #- from-file: ../modules/50-shell/cinnamon-fe-shell.yml
+  - from-file: ../modules/50-shell/cinnamon-fe-shell.yml
   - from-file: ../modules/50-shell/lightdm.yml
   - from-file: ../modules/60-desktop/common-fe-desktop.yml
   - from-file: ../modules/60-desktop/cinnamon-desktop.yml
-  - from-file: ../modules/60-desktop/cinnamon-fe-desktop.yml  
+  - from-file: ../modules/60-desktop/cinnamon-fe-desktop.yml
+  - from-file: ../modules/60-desktop/cinnamon-fe-style.yml 
   - from-file: ../modules/80-cleanup/common-cleanup.yml
   - from-file: ../modules/80-cleanup/cinnamon-cleanup.yml
   - from-file: ../modules/80-cleanup/cinnamon-fe-cleanup.yml

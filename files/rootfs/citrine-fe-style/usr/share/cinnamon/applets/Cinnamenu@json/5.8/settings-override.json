@@ -1,0 +1,48 @@
+{
+    "menu-label":{
+        "type":"entry",
+        "default":"Приложения",
+        "description":"Panel text",
+        "tooltip":"Text to show beside the panel icon"
+    },
+    "sidebar-favorites":{
+        "dependency":"show-sidebar",
+        "type":"combobox",
+        "default":0,
+        "description":"Show favorites on sidebar",
+        "options":{
+            "None":0,
+            "Apps only":1,
+            "Files only":2,
+            "Apps and files":3
+        },
+        "tooltip":"Show your favorite apps and file icons on the sidebar"
+    },
+    "show-categories":{
+        "type":"switch",
+        "default":false,
+        "description":"Show categories",
+        "tooltip":"Show list of application categories"
+    },
+    "apps-grid-icon-size":{
+        "type":"spinbutton",
+        "default":56,
+        "min":0,
+        "max":256,
+        "step":1,
+        "units":"",
+        "description":"Applications grid icon size (pixels)",
+        "tooltip":"Applications grid icon size (pixels)"
+    },
+    "sidebar-icon-size":{
+        "dependency":"show-sidebar",
+        "type":"spinbutton",
+        "default":28,
+        "min":6,
+        "max":64,
+        "step":1,
+        "units":"",
+        "description":"Sidebar icon size (pixels)",
+        "tooltip":"Sidebar icon size (pixels)"
+    }
+}
