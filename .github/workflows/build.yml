@@ -1,4 +1,4 @@
-name: Build AspenBlue Citrine
+name: Build
 
 on:
   push:
