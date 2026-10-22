@@ -16,13 +16,9 @@ modules:
         - transmission-gtk
         - transmission-common
         - pidgin
-        - gstreamer1-plugins-bad-free
-        - gstreamer1-plugins-good
         - hexchat
-        - enchant2
         #- gnome-software
         #- gnome-software-fedora-langpacks
         #- gnome-software-rpm-ostree
-        - eom
-        - mate-desktop-libs
+
   

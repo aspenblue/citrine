@@ -1,0 +1,23 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules: 
+
+  # -----------------------------------------------
+  # Dconf system definitions
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/citrine-plus-style
+        destination: /
+
+
+  # -----------------------------------------------
+  # Dconf system definitions apply
+  # -----------------------------------------------     
+
+  - type: systemd
+    system:
+      enabled:
+        - aspen-dconf-update.service
