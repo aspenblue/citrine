@@ -15,3 +15,13 @@ modules:
       install-weak-deps: false
       packages:
         - plank-reloaded
+
+
+  # -----------------------------------------------
+  # plank-reloaded autostart
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/plankreloaded
+        destination: / 

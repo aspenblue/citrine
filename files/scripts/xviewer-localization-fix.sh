@@ -4,7 +4,7 @@ set -euo pipefail
 
 SOURCE="/usr/share/applications/"
 TARGET="/usr/etc/xdg/applications/"
-FILE="xreader.desktop"
+FILE="xviewer.desktop"
 
 [[ -f "${SOURCE}${FILE}" ]] || exit 0
 

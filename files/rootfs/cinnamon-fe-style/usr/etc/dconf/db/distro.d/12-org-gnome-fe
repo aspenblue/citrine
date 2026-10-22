@@ -1,0 +1,3 @@
+[org/gnome/Terminal/Legacy/Settings]
+tab-policy='always'
+default-show-menubar=false

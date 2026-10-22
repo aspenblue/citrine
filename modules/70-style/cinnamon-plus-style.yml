@@ -9,7 +9,7 @@ modules:
 
   - type: files
     files:
-      - source: rootfs/citrine-plus-style
+      - source: rootfs/cinnamon-plus-style
         destination: /
 
 
