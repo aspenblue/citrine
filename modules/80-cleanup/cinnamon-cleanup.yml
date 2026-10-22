@@ -14,15 +14,11 @@ modules:
         - thunderbird
         - mozilla-filesystem
         - transmission
-        #- transmission-gtk
-        #- transmission-common
         - pidgin
-        #- gstreamer1-plugins-bad-free
-        #- gstreamer1-plugins-good
         - hexchat
-        #- gnome-software
-        #- gnome-software-fedora-langpacks
-        #- gnome-software-rpm-ostree
+        - gnome-software
+        - gnome-software-fedora-langpacks
+        - gnome-software-rpm-ostree
         - eom
 
   

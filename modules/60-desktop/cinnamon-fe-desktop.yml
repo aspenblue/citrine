@@ -27,6 +27,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
+        - xepub
         - webapp-manager
 
 

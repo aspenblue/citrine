@@ -9,4 +9,4 @@ modules:
 
   - type: script
     scripts:
-      - cinnamon-cinnamenu-install.sh
+      - spices-cinnamenu-install.sh

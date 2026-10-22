@@ -9,7 +9,7 @@ modules:
 
   - type: dnf
     group-install:
-      with-optional: true
+      # with-optional: true
       packages:
         - cinnamon-desktop
     install:
@@ -28,4 +28,4 @@ modules:
 
   - type: script
     scripts:
-      - cinnamon-spices-fix.sh
+      - spices-fix.sh

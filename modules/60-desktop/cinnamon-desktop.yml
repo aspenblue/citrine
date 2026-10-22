@@ -14,7 +14,6 @@ modules:
     install:
       install-weak-deps: false
       packages:
-        - xepub
         - xviewer
 
 
@@ -24,7 +23,7 @@ modules:
 
   - type: script
     scripts:
-      - cinnamon-localize-xepub.sh   
+      - xepub-localization-fix.sh
 
 
   # -----------------------------------------------
