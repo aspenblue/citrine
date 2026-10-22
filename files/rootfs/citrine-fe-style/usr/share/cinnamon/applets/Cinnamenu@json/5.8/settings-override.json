@@ -26,7 +26,7 @@
     },
     "apps-grid-icon-size":{
         "type":"spinbutton",
-        "default":56,
+        "default":50,
         "min":0,
         "max":256,
         "step":1,

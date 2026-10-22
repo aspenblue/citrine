@@ -4,6 +4,30 @@
 modules: 
 
   # -----------------------------------------------
+  # Desktop packages
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      copr:
+        - aspenblue/xapps
+    install:
+      install-weak-deps: false
+      packages:
+        - xepub
+        - xviewer
+
+
+  # -----------------------------------------------
+  # Add xepub desktop localization
+  # -----------------------------------------------
+
+  - type: script
+    scripts:
+      - cinnamon-localize-xepub.sh   
+
+
+  # -----------------------------------------------
   # Desktop flatpaks
   # -----------------------------------------------      
 

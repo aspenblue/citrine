@@ -11,10 +11,19 @@ modules:
     remove:
       packages:
         - thunderbird
+        - mozilla-filesystem
         - transmission
+        - transmission-gtk
+        - transmission-common
         - pidgin
+        - gstreamer1-plugins-bad-free
+        - gstreamer1-plugins-good
         - hexchat
-        - gnome-software
-        - gnome-software-fedora-langpacks
-        - gnome-software-rpm-ostree
+        - python3-cffi
+        - enchant2
+        #- gnome-software
+        #- gnome-software-fedora-langpacks
+        #- gnome-software-rpm-ostree
+        - eom
+        - mate-desktop-libs
   

@@ -14,6 +14,3 @@ modules:
         install:
           # Web
           - org.mozilla.thunderbird
-          - com.transmissionbt.Transmission
-          - im.pidgin.Pidgin
-          - io.github.Hexchat
