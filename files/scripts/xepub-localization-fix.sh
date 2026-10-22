@@ -17,5 +17,5 @@ if grep -q '^Name\[ru\]=' "${TARGET}${FILE}"; then
 fi
 
 sed -i '/^\[Desktop Entry\]/,/^\[/{
-    /^Name=/a Name[ru]=Электронные книги
+    /^Name=/a Name[ru]=Просмотр книг
 }' "${TARGET}${FILE}"

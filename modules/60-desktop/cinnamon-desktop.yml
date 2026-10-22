@@ -15,14 +15,17 @@ modules:
       install-weak-deps: false
       packages:
         - xviewer
+        - xepub
 
 
   # -----------------------------------------------
-  # Add xepub desktop localization
+  # Fix localization
   # -----------------------------------------------
 
   - type: script
     scripts:
+      - xviewer-localization-fix.sh
+      - xreader-localization-fix.sh
       - xepub-localization-fix.sh
 
 

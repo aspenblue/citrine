@@ -1,7 +1,7 @@
 {
     "menu-label":{
         "type":"entry",
-        "default":"Приложения",
+        "default":"Меню",
         "description":"Panel text",
         "tooltip":"Text to show beside the panel icon"
     },
