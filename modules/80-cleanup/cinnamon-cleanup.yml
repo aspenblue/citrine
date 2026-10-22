@@ -9,18 +9,20 @@ modules:
 
   - type: dnf
     remove:
+      auto-remove: true
       packages:
         - thunderbird
         - mozilla-filesystem
         - transmission
-        - transmission-gtk
-        - transmission-common
+        #- transmission-gtk
+        #- transmission-common
         - pidgin
-        - gstreamer1-plugins-bad-free
-        - gstreamer1-plugins-good
+        #- gstreamer1-plugins-bad-free
+        #- gstreamer1-plugins-good
         - hexchat
         #- gnome-software
         #- gnome-software-fedora-langpacks
         #- gnome-software-rpm-ostree
+        - eom
 
   

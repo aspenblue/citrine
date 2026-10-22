@@ -22,6 +22,7 @@ modules:
   - from-file: ../modules/60-desktop/cinnamon-fe-desktop.yml
   - from-file: ../modules/70-style/cinnamon-fe-style.yml 
   - from-file: ../modules/80-cleanup/common-cleanup.yml
+  - from-file: ../modules/80-cleanup/common-fe-cleanup.yml  
   - from-file: ../modules/80-cleanup/cinnamon-cleanup.yml
   - from-file: ../modules/80-cleanup/cinnamon-fe-cleanup.yml
 

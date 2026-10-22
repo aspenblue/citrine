@@ -9,6 +9,7 @@ modules:
 
   - type: dnf
     remove:
+      auto-remove: true
       packages:
         - gnome-calculator
         - gnome-calendar
@@ -18,4 +19,5 @@ modules:
         - gnome-system-monitor
         - gnome-disk-utility
         - shotwell
+        - xfburn
   

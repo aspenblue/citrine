@@ -27,7 +27,7 @@ modules:
     install:
       install-weak-deps: false
       packages:
-        - webapp-manager   
+        - webapp-manager
 
 
   # -----------------------------------------------
